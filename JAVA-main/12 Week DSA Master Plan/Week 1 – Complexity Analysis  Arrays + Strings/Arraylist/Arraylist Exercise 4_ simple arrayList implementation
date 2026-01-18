@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> nameArrayList = new ArrayList<>();
+         nameArrayList.add("Jenny");
+         nameArrayList.add("Marco");
+         nameArrayList.add("Adonis");
+        
+        System.out.println("The difference of implementation!!");
+        //This is only implementing using print system out
+        System.out.println(nameArrayList+ "\n");
+        
+        //This is using for loop
+        for(String s : nameArrayList){
+            System.out.println(s);
+        }
+        
+    }
+}

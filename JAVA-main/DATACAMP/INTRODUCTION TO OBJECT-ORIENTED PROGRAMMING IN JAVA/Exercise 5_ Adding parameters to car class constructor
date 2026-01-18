@@ -1,0 +1,22 @@
+class Main {  
+
+  static class Car {
+      String color;
+      String model;
+      int year;
+
+      // Update constructor parameters
+      Car(String color, String model, int year){
+          this.color = color;
+          this.model = model;
+          // Set the year property
+          this.year = year;
+      }
+  }
+  
+  public static void main(String[] args) {
+  	// Create object instance with correct parameters
+    Car myCar = new Car("blue", "corolla", 2022);
+    System.out.println(myCar.year);
+  }
+}

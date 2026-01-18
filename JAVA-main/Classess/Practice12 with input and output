@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class Student2{
+	String name;
+	int gradeLevel;
+	double averageGrade;
+	
+	Student2(String name, int gradeLevel, double averageGrade){
+	this.name = name;
+	this.gradeLevel = gradeLevel;
+	this.averageGrade = averageGrade;
+	}
+
+
+	boolean isPassing(){
+	if(averageGrade > 75){
+	return true;
+		}
+	else {
+	return false;
+		}
+	}
+
+	void addBonus(double points){
+	averageGrade += points;
+	if(averageGrade > 100){
+	averageGrade = 100;
+	}
+	}
+
+	void display(){
+	System.out.println("\nName: " + name);
+	System.out.println("Grade Level: " + gradeLevel);
+	System.out.println("Average Grade: " + averageGrade);
+	}
+
+	public static void main(String [] args){
+	Scanner cs = new Scanner(System.in);
+	System.out.print("\nEnter your name: ");
+	String name = cs.nextLine();
+	System.out.print("Enter your Grade Level: ");
+	int level = cs.nextInt();
+	System.out.print("Enter your Average Grade: ");
+	double average = cs.nextDouble();
+	cs.nextLine();
+
+
+	Student2 newStudent = new Student2(name,level,average);
+	newStudent.display();
+	System.out.println("After adding bonus points.......");
+	newStudent.addBonus(5);
+	newStudent.display();
+	boolean result = newStudent.isPassing();
+	System.out.println("Passing: " + result);
+
+	cs.close();
+}
+}

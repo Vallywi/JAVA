@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Example{
+    public static void main(String [] args){
+        ArrayList<String> list = new ArrayList<>();
+
+        
+       String name = "Hannah";
+       String name1 = "Barbie";
+       String name2 = "Olga";
+       
+       list.add(name);
+       list.add(name1);
+       list.add(name2);
+       list.add("Filoteo");
+       
+       System.out.println(list);
+        
+        
+        
+    }
+    
+    
+}

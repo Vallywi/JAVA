@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Testing{
+	public static void main(String [] args){
+	Scanner cs = new Scanner (System.in);
+	int num1, num2, sub;
+	char choice;
+	do{
+	System.out.print("Enter the first number: ");
+	num1 = cs.nextInt();
+	System.out.print("Enter the second number: ");
+	num2 = cs.nextInt();
+	sub = num1 - num2;
+
+	System.out.println("The result is: " + sub);
+
+	System.out.println("Do you want to continue? [Y/N]: ");
+	choice = cs.next().charAt(0);
+
+	}while(choice == 'Y' || choice == 'y');
+	System.exit(0);
+}
