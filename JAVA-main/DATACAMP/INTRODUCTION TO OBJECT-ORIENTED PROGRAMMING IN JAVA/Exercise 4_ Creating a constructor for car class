@@ -1,0 +1,23 @@
+class Main {  
+
+  static class Car {
+      String color;
+      String model;
+      int year;
+
+	  // Create constructor method	
+      Car() {        
+          this.model = "camry";
+          // Assign the values for the model and year properties
+          this.color = "red";
+          this.year = 2019;
+      }
+
+  }
+  
+  public static void main(String[] args) {
+    Car myCar = new Car();
+    // Print the "color" property
+    System.out.println(myCar.color);
+  }
+}

@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class Main{
+    public static void main(String [] args){
+        Display disp = new Display();
+        Scanner cs = new Scanner(System.in);
+        ArrayList<String> names = new ArrayList<>();
+        int choice;
+        int num;
+        int size;
+        
+        do{
+        disp.menu();
+        System.out.print("Choose a choice: ");
+        num = cs.nextInt();
+        cs.nextLine();
+        
+        switch(num){
+            case 1: 
+                System.out.print("Enter a number of names you wanted to add: ");
+                 try {
+                        size = cs.nextInt();
+                        cs.nextLine();
+                    } catch (InputMismatchException e) {
+                        System.out.println("Please enter a valid integer for the number of names.\n");
+                        cs.nextLine();
+                        break;
+                    }
+                
+                for(int i = 0; i < size; i++){
+                    System.out.print("Enter the name for " + (i + 1) + " : ");
+                    String name1 = cs.nextLine();
+                    names.add(name1);
+                }
+            System.out.println("The name has been added!!\n");
+            break;
+            
+            case 2:
+                System.out.println("======THE NAMES ARE======");
+                for(int i = 0; i < names.size(); i++){
+                    System.out.println("Name no." + (i + 1) + " : " + names.get(i));
+                }
+                
+                System.out.println("\n");
+            break;
+            
+            case 3: 
+                System.out.println("Enter the name that you wanted to remove: ");
+                String name2 = cs.nextLine();
+                if(names.contains(name2)){
+                names.remove(name2);
+                System.out.println("The name has been deleted!!\n");
+                }
+                else{
+                System.out.println("The name is not on the list!!\n");
+                }
+            break;
+            
+            case 4:
+                System.out.println("Thank you for using our System!!");
+                System.exit(0);
+            break;
+        
+        }
+        
+        }while(num != 4);
+        
+    }
+}
+
+class Display{
+    void menu(){
+        System.out.println("=========================================");
+        System.out.println("== 1. Add Name                         ==");
+        System.out.println("== 2. Display a name                   ==");
+        System.out.println("== 3. Remove a name                    ==");
+        System.out.println("== 4. Exit                             ==");
+        System.out.println("=========================================");
+    }
+}
+

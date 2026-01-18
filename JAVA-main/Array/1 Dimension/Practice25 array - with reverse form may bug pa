@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class trial{
+    public static void main(String [] args){
+       Scanner cs = new Scanner(System.in); 
+       int sum = 0;
+       int highest = 0;
+       int lowest = 0;
+       
+        System.out.print("How many size of arrays you will input?: ");
+        int size = cs.nextInt();
+        
+        int [] number = new int[size];
+        
+        int [] even = new int[size];
+        int [] odd = new int[size];
+        
+        for (int i = 0; i < size; i++){
+            System.out.print("Enter for the size[" + (i) + "]: ");
+            number [i] = cs.nextInt();
+            sum += number[i];
+            
+            if(highest < number[i]){
+                highest = number[i];
+            }
+            else{
+                lowest = number[i];
+            }
+            
+            if(number[i]%2 == 0){
+                even[i] = number[i];
+            } else{
+                odd[i] = number[i];
+            }
+            
+        }
+        
+        System.out.print("\nFor Reverse Form: \n");
+        for(int i = size - 1; i >= 0; i--){
+            System.out.print(number[i] + " ");
+        }
+        
+        System.out.println("\n\nThe Original Form");
+        for(int i = 0; i < size; i++){
+            System.out.println("For number[" + i + "]: " + number[i]);
+        }
+        
+        System.out.print("\nOdd: ");
+        for(int i = 0; i < size; i++){
+            if(odd[i] > 0){
+                System.out.print(odd[i] + " ");
+            }
+        }
+        
+         System.out.print("\nEven: ");
+        for(int i = 0; i < size; i++){
+            if(even[i] > 0){
+                System.out.print(even[i] + " ");
+            }
+        }
+        
+        
+        
+        System.out.println("\n\nThe sum of all array is: " + sum);
+        System.out.println("The largest element: " + highest);
+        System.out.println("The lowest element: " + lowest);
+    }
+}

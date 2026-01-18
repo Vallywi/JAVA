@@ -1,0 +1,10 @@
+class Main {
+    public static void main(String[] args) {
+        try{
+        int sum = 8/0;
+        }
+        catch(ArithmeticException e){
+            System.out.println("You cannot divide the whole number to zero!");
+        }
+    }
+}

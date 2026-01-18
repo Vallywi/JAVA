@@ -1,0 +1,14 @@
+public class Main
+{
+    public static void main(String [] args){
+        Student s1 = new Student("Zarrah", 19, "F", 4.0);
+        Student s2 = new Student("Vallirie", 21, "F", 1.0);
+        System.out.println("Student 1");
+        s1.displayStudent();
+        System.out.println("\nStudent 2");
+        s2.displayStudent();
+        System.out.println("\nTeacher");
+        Teacher t1 = new Teacher("Ms. Cyra", 23, "F", 10000);
+        t1.displayTeacher();
+    }
+}

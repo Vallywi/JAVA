@@ -1,0 +1,28 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main3{
+	public static void main(String [] args){
+	Scanner cs = new Scanner(System.in);	
+
+	System.out.println("Enter a name you wanted to add in a textfile: ");
+	String name1 = cs.nextLine();
+
+	try(FileWriter writer = new FileWriter("Example.txt")){
+	writer.write(name1 + "\n");
+
+	System.out.println("The name has been added!!");
+	
+
+	}catch(IOException e){
+
+	System.out.println("Couldn't write a file!!");
+
+
+
+	}
+
+
+}
+}

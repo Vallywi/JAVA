@@ -1,0 +1,14 @@
+
+public class Practice19{
+
+	public static void main (String [] args){
+
+	String [] name= {"Zahara", "Maincoon", "Java"};
+	
+	int length = 3;
+
+	for(int i = 0; i < length; i++){
+	System.out.println(name[i]);
+	}
+}
+}

@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Example{
+    public static void main(String [] args){
+        Scanner cs = new Scanner(System.in);
+        ArrayList<String> list = new ArrayList<>();
+        
+        System.out.print("Enter you wanted to add in 5th element: ");
+        String name4 = cs.nextLine();
+        
+       String name = "Hannah";
+       String name1 = "Barbie";
+       String name2 = "Olga";
+       
+       list.add(name);
+       list.add(name1);
+       list.add(name2);
+       list.add("Filoteo");
+       list.add(name4);
+       
+       list.remove("Filoteo");
+       
+       System.out.println(list.toString());
+        
+        
+        
+    }
+    
+    
+}

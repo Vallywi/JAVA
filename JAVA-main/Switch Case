@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Tiktok{
+	public static void main(String [ ] args){
+	String name;
+	char choice;
+	int num1, num2;
+	char Tryagain;
+
+		Scanner scan = new Scanner(System.in);
+
+		do{
+
+		System.out.print("Enter your name: ");
+		name = scan.nextLine();
+		scan.nextLine();
+		System.out.print("Enter first number: ");
+		num1 = scan.nextInt();
+		System.out.print("Enter second number: ");
+		num2 = scan.nextInt();
+		System.out.print("Choose the operation you will use( + , - , / , * ): ");
+		choice = scan.next().charAt(0);
+
+		switch(choice){
+		case '+':
+			int sum = num1 + num2;
+			System.out.println("The answer is: " + sum);
+		break;
+
+		case '-':
+			int sub = num1 - num2;
+			System.out.println("The answer is: " + sub);
+		break;
+		
+		case '/':
+			float div = (float)num1 / (float)num2;
+			System.out.println("The answer is: " + div);
+		break;
+		
+		case '*':
+			int multi = num1 * num2;
+			System.out.println("The answer is: " + multi);
+		break;
+		
+		default:
+			System.out.println("Invalid Operation please try again");
+		}
+
+		System.out.print("Do you want to continue again?[Y/N]: ");
+		Tryagain = scan.next().charAt(0);
+	
+		}while(Tryagain == 'Y' || Tryagain == 'y');
+
+	}
+}
