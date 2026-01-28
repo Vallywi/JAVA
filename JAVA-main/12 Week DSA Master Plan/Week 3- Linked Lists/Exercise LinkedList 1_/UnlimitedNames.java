@@ -8,7 +8,7 @@ public class UnlimitedNames {
         String name;
         String choice;
 
-        System.out.println("=== Name Collector using LinkedList ===");
+        System.out.println("== Name Collector using LinkedList ==");
 
         
         while (true) {
