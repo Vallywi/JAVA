@@ -13,9 +13,9 @@ public class Array4{
         }
         
         if(yes == real){
-            System.out.println("The array is sorted!!");
+            System.out.println("The array is sorted!!!");
         }else{
-            System.out.println("The array is not sortedd!!");
+            System.out.println("The array is not sortedd!!!!");
         }
     }
 }
