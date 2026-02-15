@@ -1,6 +1,6 @@
 package DAY6;
 
-public class Array6{
+class Array6{
 	public static void main(String [] args){
 	int [] arr = {21, 20, 31, 56, 30, 40, 10, 4};
 	
@@ -15,5 +15,9 @@ public class Array6{
 	end--;
 	}
 	}
+
+    for(int s : arr){
+        System.out.println(s + " ");
+    }
 }
 }
