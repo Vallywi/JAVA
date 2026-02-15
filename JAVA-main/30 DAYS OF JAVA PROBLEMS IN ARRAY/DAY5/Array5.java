@@ -47,6 +47,7 @@ public class Array5 {
             }
         }
 
+        System.out.println("\nRemoving the duplication in not a sorted array:");
         for(int i =0; i < index;i++){
             System.out.print(arr[i] + " ");
         }
