@@ -3,6 +3,7 @@ public class Array5 {
     public static void main(String[] args) {
         int [] arr = {1, 3, 5, 2, 5, 4 ,8, 8, 7, 7, 11, 10};
         
+        System.out.println("Original Array:")
         for(int s : arr){
             System.out.print(s + " ");
         }
