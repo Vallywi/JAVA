@@ -1,4 +1,5 @@
-//Linear search for an element
+//Linear search for an element and the number of occurance
+
 import java.util.Scanner;
 
 class Array3{
