@@ -1,4 +1,6 @@
 package ADDITIONAL;
+//removing the duplications of the Unsorted Array
+//Time Complexity: o(n^2)
 //[2, 3, 4, 6, 8, 10, 2, 4]
 
 public class Array01{
