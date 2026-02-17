@@ -1,3 +1,7 @@
+//reversed implementation for an array
+// Reverse an array (in-place)
+// Reverse array using a new array
+
 import java.util.Scanner;
 public class array2{
 	public static void main(String [] args){
