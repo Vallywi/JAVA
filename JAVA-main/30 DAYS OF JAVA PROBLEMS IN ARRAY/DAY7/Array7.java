@@ -1,7 +1,7 @@
 package DAY7;
-
 // [3, 4, 10, 9, 8, 4, 1, 23];
 // [23, 3, 4, 10, 9, 8, 4, 1];
+// Right rotate array by 1 step
 
 public class Array7{
 	public static void main(String [] args){
