@@ -6,6 +6,7 @@
 //****
 //*****
 //
+package ADDITIONAL;
 class Array04 {
     public static void main(String[] args) {
         System.out.println("The Inverted Pyramid!!\n");
