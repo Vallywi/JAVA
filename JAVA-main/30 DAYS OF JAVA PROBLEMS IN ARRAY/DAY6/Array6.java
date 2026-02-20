@@ -3,6 +3,8 @@ package DAY6;
 // [21, 20, 31, 56, 30, 40, 10, 4]
 // [21, 4, 31, 56, 40, 10, 30, 20]
 
+//so mali pala thiz
+
 class Array6{
 	public static void main(String [] args){
 	int [] arr = {21, 20, 31, 56, 30, 40, 10, 4};
