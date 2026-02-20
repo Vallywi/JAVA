@@ -9,7 +9,7 @@ class Solution{
         k = k % nums.length;
         reverse(nums, 0, nums.length-1);
         reverse(nums, 0, k - 1);
-        reverse(nums, k, nums.length);
+        reverse(nums, k, nums.length-1);
     
     }
 
@@ -30,6 +30,10 @@ public class Array8A {
         int k = 3;
         Solution sol = new Solution();
             sol.rotate(nums, k);
+
+        for(int s : nums){
+            System.out.print(s + " ");
+        }
     }
 
 }
