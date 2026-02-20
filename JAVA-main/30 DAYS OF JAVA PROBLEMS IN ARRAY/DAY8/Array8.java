@@ -14,7 +14,6 @@ class Array08{
         int [] arr = {2, 3, 5, 6, 7, 10};
         int k = 2;
         int hello = arr.length-1;
-        int the = arr.length -1;
         
         for(int s : arr){
             System.out.print(s + " ");
