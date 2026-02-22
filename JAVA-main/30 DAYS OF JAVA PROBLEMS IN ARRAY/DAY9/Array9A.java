@@ -1,6 +1,7 @@
 //Find all pairs that sum to a target
 // [4, 2, 3, 5, 7, 9, 10, 14, 20];
 //target : 14
+//THIS IS BRUTE FORCE and there's a fastest way for this
 
 class Solution{
 	public void pairing(int [] nums, int target){
@@ -11,8 +12,8 @@ class Solution{
 		}
 	}
 	}
-}
-}
+	}
+	}
 
 public class Array9A{
         public static void main(String [] args){
