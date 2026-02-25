@@ -9,8 +9,8 @@ class Solution{
         int [] char_count = new int[26];
 
         for(int i = 0; i < t.length();i++){
-            char_count[s.charAt(i)- 'a']++;
-            char_count[t.charAt(i)- 'a']--;
+            char_count[s.charAt(i) - 'a']++;
+            char_count[t.charAt(i) - 'a']--;
         }
 
         for(int count : char_count){
@@ -23,7 +23,6 @@ class Solution{
 }
 
 
-package ADDITIONAL;
 public class Array09 {
     public static void main(String [] args){
         String s = "anagram";
