@@ -1,3 +1,5 @@
+//Finding the minimum and maximum also with the Scanner
+package DAY1;
 import java.util.Scanner;
 public class array1B{
 	public static void main(String [] args){
