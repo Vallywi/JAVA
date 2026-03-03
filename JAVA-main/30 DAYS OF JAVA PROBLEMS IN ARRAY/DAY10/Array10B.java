@@ -1,3 +1,9 @@
+// 20.	Check if two arrays are equal by value
+// int nums1 [2, 3, 1, 1, 4, 5, 6]
+// int nums2 [2, 3, 1, 1, 5, 4, 6]
+// If they are equal = True
+// If they are not equal = False
+
 package DAY10;
 import java.util.*;
 
@@ -14,7 +20,6 @@ class Solution{
         }
         return true;
     }
-    
 }
 
 public class Array10B{
