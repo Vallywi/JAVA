@@ -1,15 +1,14 @@
 package DAY10;
 //Count frequency of each element
-// [2, 2, 1, 3, 4, 5, 6, 7, 7]
+// [2, 3, 5, 10, 6, 1, 1, 1, 2, 4, 10]
 
 // 2 => 2
-// 1 => 1
+// 1 => 3
 // 3 => 1
 // 4 => 1
 // 5 => 1
 // 6 => 1
-// 7 => 2
-// 9 -> 3
+// 10 => 1
 
 import java.util.*;
 class Solution{
