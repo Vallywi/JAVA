@@ -2,7 +2,7 @@
 // using the hashmaps
 
 //[4, 2, 3, 5, 7, 9, 10, 14, 20]
-//target =9;
+//target = 9;
 
 import java.util.*;
 class Solution{
