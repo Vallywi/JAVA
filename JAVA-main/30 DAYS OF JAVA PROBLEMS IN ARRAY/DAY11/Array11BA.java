@@ -1,7 +1,7 @@
 // find the duplicate nums (Hashmap)
 // nums = [1, 2, 2, 3, 4, 4, 5, 5, 6, 7, 8,10, 10, 9]
 // expected output : 2 4 5 10
-
+package DAY11;
 import java.util.*;
 
 class Solution{
