@@ -5,7 +5,6 @@ package DAY12;
 // max
 //yess
 //final na hehehe
-//hindi pa pala lmao
 
 class Solution{
     public int subbarray(int [] nums){
