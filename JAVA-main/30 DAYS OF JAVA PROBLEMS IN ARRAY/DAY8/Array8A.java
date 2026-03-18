@@ -2,7 +2,7 @@
 //Well this is the easiest code and shortest time and space complexity that we can use
 //[2, 3, 5, 7, 9, 1, 10, 13]
 // k = 3;
-//asldals
+
 package DAY8;
 class Solution{
     public void rotate(int [] nums, int k){
