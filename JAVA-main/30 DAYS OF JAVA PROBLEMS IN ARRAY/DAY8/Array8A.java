@@ -1,6 +1,8 @@
 //Rotate array by K steps (right rotation)
 //Well this is the easiest code and shortest time and space complexity that we can use
 //[2, 3, 5, 7, 9, 1, 10, 13]
+//Expected Output:
+//[1, 10, 13, 2, 3, 5, 7, 9]
 // k = 3;
 
 package DAY8;
